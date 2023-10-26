@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title> Sentiment analysis App</title>
+
+</head>
+<body>
+    <h1>Simple Sentiment Analysis App</h1>
+    <form method = 'POST'>
+        <label for = 'user_input'>Enter your opinion about the Airline</label><br><br>
+        <textarea id = 'user_input', name = 'user_input' rows = '4' cols = '50'></textarea><br><br>
+        <button type = 'submit'><h3>Predict Sentiment<h3></button>
+    
+    </form>
+
+    {% if sentiment %}
+    <h2>Sentiment: {{ sentiment }}</h2>
+    {% endif %}
+
+</body>
+
+
+</html>
